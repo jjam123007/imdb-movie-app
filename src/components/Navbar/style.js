@@ -7,18 +7,19 @@ export default makeStyles((theme) => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 10px 10px 10px',
+    padding: '0.7rem 0 ',
     backgroundColor:'black',
-    fontFamily: 'Helvetica,Arial,sans-serif',    
-    // rgba(0,183,255, 1)
+    whiteSpace: 'nowrap',
+  },
+  box:{
+    alignItems:'center'
   },
   heading: {
     textDecoration: 'none',
     alignItems:'center',
   },
   image: {
-    marginLeft: '45px',
-    paddingLeft:'55px'
+    
   },
   toolbar: {
     display: 'flex',
@@ -43,10 +44,9 @@ export default makeStyles((theme) => ({
   },
   menuButton: {
     color: 'white',
-    backgroundColor: '#000',
     padding: '0 1rem',
     text:'bold',
-    fontSize: '0.875rem',
+    fontSize: '0.675rem',
     fontWeight:'500',
   },
 }));

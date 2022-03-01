@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#000',
+    },
+  },
+});
 
 ReactDOM.render(
-  
-  <App />,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>
+  ,
   document.getElementById('root')
 );
 

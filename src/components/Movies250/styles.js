@@ -2,8 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 export default makeStyles((theme) => ({
-  bigContainer:{
-    minWidth:'1008px',
+  root:{
     width:'auto',
     backgroundColor:'white',
     margin:'auto',
@@ -11,16 +10,21 @@ export default makeStyles((theme) => ({
     height:'100%',
     position: 'static'
   },
-  container: {
-    height:'100%',
-    backgroundColor:'white',    
+  div: {
+    backgroundColor:'rgba(185,185,185,0.1)'  
+  },
+  share:{
+    display:'flex',
+    justifyContent:'space-between',
+    alignItems:'center',
+    paddingBottom:'10px'
   },
   movielist:{
     position:'relative',
     padding:'15px 15px 15px 15px',
     margin:'0',
     float:'left',
-    backgroundColor:'transparent',
+    backgroundColor:'rgba(185,185,185,0.1)',
     maxWidth:'667px',
    
   },
@@ -28,7 +32,7 @@ export default makeStyles((theme) => ({
     float:'right',
     position:'relative',
     margin:'0',
-    backgroundColor:'transparent',
+    backgroundColor:'rgba(185,185,185,0.1)',
     maxWidth:'300px',
     padding:'15px 15px 15px 15px',
     },
@@ -46,7 +50,7 @@ export default makeStyles((theme) => ({
     height: '70px',
     color: '#333',
     fontSize: '13px',
-    paddingLeft: '0.5rem'
+    padding: '1rem 0.5rem'
   },
   rating:{
     display:'flex',
@@ -54,7 +58,15 @@ export default makeStyles((theme) => ({
     height: '70px',
     color: '#333',
     fontSize: '13px',
-    verticalAlign:'center'
+    alignItems:'center'
   },
+  icon:{
+    width:'50px',
+    alignSelf:'center'
+  },
+  links:{
+    color: '#136CB2',
+    fontSize:'13px'
+  }
   
 }));
